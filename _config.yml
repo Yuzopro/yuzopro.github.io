@@ -102,7 +102,7 @@ page-mathjax: false
 
 
 # Friends
-friends: [
+# friends: [
     # {
     #     title: "乱序",
     #     href: "http://mida.re/"
@@ -134,4 +134,4 @@ friends: [
     #     title: "解旻的博客",
     #     href: "http://xieminis.me/"
     # }
-]
+# ]
