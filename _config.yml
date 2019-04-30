@@ -18,7 +18,9 @@ RSS: false
 github_username:    yuzopro
 # twitter_username:   huxpro
 # facebook_username:  huxpro
-# jianshu_username:   e71990ada2fd
+jianshu_username:   ef3cb65219d4
+juejin_username:   56ea9d7ca341310054a57b7c
+csdn_username:   Yuzopro
 #linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -86,7 +88,7 @@ sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in bot
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 
