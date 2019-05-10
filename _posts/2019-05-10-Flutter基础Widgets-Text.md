@@ -4,7 +4,7 @@ title:      "Flutter基础Widgets-Text"
 subtitle:   "flutter基础Widgets之Text的基本用法"
 date:       2019-05-10 15:04:00
 author:     "Yuzo"
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-flutter-text.jpg"
 catalog: true
 tags:
     - 移动端
