@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenGit-Flutter写的Github客户端</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="description" content="OpenGit是用Flutter开发的一款Github客户端，通过它，您可以与全球3600万开发者一起成长、学习、分享代码。">
+    <meta name="keywords" content="OpenGit, Github客户端">
+    <meta name="baidu-site-verification" content="oeLolPaTVU"/>
+    <meta name="sogou_site_verification" content="xhNTjenszq"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery_lazyload@1.9.3/jquery.lazyload.min.js"></script>
+    <script>
+        $(function () {
+            var ua=navigator.userAgent.toLocaleLowerCase();
+            var isIos=ua.indexOf("android")===-1||ua.indexOf("iphone")!==-1;
+            var text="立即下载";
+            if(isIos){
+                var tip=$("#top-tip");
+                tip.text("暂只支持Android下载")；
+                tip.show()；
+            }else{
+                var tip=$("#top-tip");
+                //android 微信中
+               if(ua.indexOf("micromessenger")!==-1){
+                tip.text("请在右上方菜单中点击“在浏览器中打开”下载")
+               }
+              tip.show()
+            }
+            if (!isIos) {
+                $(".git-btn").click(function () {
+                    location.href="https://github.com/Yuzopro/OpenGit_Flutter/releases/download/1.0.0/opengit-release-1.0.0.apk";
+                })
+            }
+            var t=-1;
+            $("#scrollview img").lazyload({effect: "fadeIn"});
+            $("#scrollview").on("scroll",function(){
+                window.scroll(0,window.scrollY+t)
+                t=t===-1? 1:-1;
+            })
+        });
+
+    </script>
+    <style>
+        #logo {
+            border-radius: 10px;
+            width: 120px;
+            margin-top: 60px;
+        }
+
+        .box {
+            padding-top: 30px;
+            padding-bottom: 90px;
+        }
+
+        .box p {
+            line-height: 1.65;
+        }
+
+        .btn-s {
+            padding: 12px 30px 12px 30px;
+            width: 180px;
+            margin: 10px;
+            color: #fff;
+            background: #51C3F9;
+            border-radius: 30px;
+            border: #333 1px solid;
+            cursor: pointer;
+            transition: all .2s;
+            display: inline-block;
+        }
+
+        .btn-s:hover {
+            border-color: blue;
+        }
+
+        .btn-s:active {
+            background: #10a5f9;
+            color: #eee;
+        }
+
+        .git-btn {
+            padding-top: 10px;
+        }
+
+        .git-btn a {
+            color: #333;
+        }
+
+        .git-btn a:hover {
+            text-decoration: none;
+            color: #01579b;
+        }
+
+        p a:hover {
+            text-decoration: none;
+            opacity: .8;
+        }
+
+        .chip {
+            width: 30px;
+            height: 30px;
+            background: #51C3F9;
+            position: absolute;
+        }
+
+        .section {
+            overflow: hidden;
+            display: inline-block;
+            position: relative
+        }
+
+        .intro {
+            float: left;
+            text-align: left;
+            line-height: 1.8;
+            font-weight: 300;
+            padding: 40px;
+        }
+
+        .intro p {
+            font-size: 18px;
+        }
+
+        .tit {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #scrollview {
+            overflow-y: hidden;
+            overflow-x: auto;
+            width: 100%;
+            /*height: 514px;*/
+            white-space: nowrap;
+        }
+
+        #scrollview > div {
+            display: inline-block;
+            padding: 0 15px;
+            /*height: 514px;*/
+            position: relative;
+        }
+
+        #scrollview > div > div {
+            position: absolute;
+            bottom: 0;
+            width: 280px;
+            padding: 20px 10px;
+            background: #333;
+            opacity: .9;
+            color: white;
+        }
+
+        #scrollview img {
+            width: 280px;
+        }
+    </style>
+</head>
+<div id="top-tip" style="padding: 20px; background: #000; color:white; display: none">如不能正常下载，请在浏览器中打开此页面</div>
+<div style="background:#222; background-size: cover">
+    <div class="container" style='text-align: center;'>
+        <div style="color: white; margin-top: 40px; font-weight: 300;">OpenGit手机端下载</div>
+        <div class="box">
+            <div style="font-size: 20px; font-weight: 300; letter-spacing: 2px;">
+                <img src="https://cdn.jsdelivr.net/gh/flutterchina/website@1.0/images/gitme/180.png" id="logo">
+            </div>
+            <div style="font-size: 16px; font-weight: 300; letter-spacing: 1px; padding:40px 0 30px ; color:#ccc">
+                OpenGit是用Flutter开发的一款Github客户端，通过它，您可以与全球3600万开发者一起成长、学习、分享代码。
+            </div>
+            <div class="git-btn">
+                <div class="btn-s"><span>立即下载</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container" style="text-align: center; position: relative;">
+        <div class="chip" style="left: 20px; bottom: 20px"></div>
+        <div class="chip" style="background: #222; right: 20px; top: 20px"></div>
+        <div class="section">
+            <div class="intro">
+                <div class="tit">一目了然</div>
+                <p>Github账号登录后，您可以在主页看到您的项目、动态、以及问题列表。项目的描述、star、issue、fork、语言等信息一目了然。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background: #222;">
+    <div class="container" style="text-align: center; position: relative">
+        <!--<div class="chip" style="left: 20px; top: 10px;"></div>-->
+        <div class="chip" style="right: 20px; bottom: 20px; background: #eee"></div>
+        <div class="section">
+            <div class="intro" style="margin-right: 0; color: #ccc">
+                <div class="tit" style="color: white">项目主页</div>
+                <p>项目主页包含了项目简介、互动、分支、源码、文档、等各种信息。</p>
+                <p>您可在此 Star 或关注您喜欢的项目！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container" style="text-align: center; position: relative;">
+        <div class="chip" style="left: 20px; bottom: 20px;"></div>
+        <div class="section">
+            <div class="intro">
+                <div class="tit">Issue</div>
+                <p>您可以在手机上新建Issue，并且可以对Issue进行评论、编辑、点赞等操作。</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div style="background: #333;">
+    <div class="container" style="text-align: center; position: relative; font-weight: 300">
+        <div class="tit" style="color: #eee; padding: 50px 0;">更多功能，等你发现</div>
+        <div id="scrollview">
+            <div>
+                <img  data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_18.jpeg">
+                <div>项目首页</div>
+            </div>
+            <div>
+                <img  data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_19.jpeg">
+                <div>项目主页</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_17.png" >
+                <div>主题、语言</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_7.png" >
+                <div>登录</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_8.jpeg" >
+                <div>所有项目热度排行榜</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_9.png" >
+                <div>分支源码浏览</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_10.jpeg"  >
+                <div>个人资料</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_11.jpeg"  >
+                <div>编程语言项目热度排行榜</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_12.jpeg"  >
+                <div>动态</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_13.jpeg"  >
+                <div>搜索</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_14.png"  >
+                <div>关于</div>
+            </div>            
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_15.jpeg"  >
+                <div>主页（掘金Flutter列表）</div>
+            </div>
+            <div>
+                <img data-original="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_16.jpeg"  >
+                <div>问题</div>
+            </div>
+
+        </div>
+        <div style="position: absolute; right: 0; bottom: 250px; color:white; font-size: 30px; background: #333333;padding: 10px; opacity: .95">
+            》
+        </div>
+    </div>
+</div>
+
+<div id="donate">
+    <div class="container" style="text-align: center; position: relative;">
+        <div class="chip" style="left: 20px; bottom: 20px"></div>
+        <div class="chip" style="background: #222; right: 20px; top: 20px"></div>
+        <div class="section">
+            <div class="intro" style="text-align: center">
+                <div class="tit">觉得好？<br>
+                    请打赏下作者😀
+                </div>
+                 <img src="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/weixin_pay.jpeg" style="width: 250px" />
+                 <br>微信中长按识别此二维码
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="text-align: center; ">
+    <div style="padding: 50px; ">
+        <div style=""><a href="https://github.com/Yuzopro/OpenGit_Flutter">OpenGit源码</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

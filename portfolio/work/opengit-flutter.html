@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>OpenGit-Flutter写的Github客户端</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <meta name="description" content="OpenGit是用Flutter开发的一款Github客户端，通过它，您可以与全球3600万开发者一起成长、学习、分享代码。">
     <meta name="keywords" content="OpenGit, Github客户端">
     <meta name="baidu-site-verification" content="oeLolPaTVU"/>
@@ -15,6 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery_lazyload@1.9.3/jquery.lazyload.min.js"></script>
     <script>
         $(function () {
+            var ua=navigator.userAgent.toLocaleLowerCase();
+            var isPC=ua.indexOf("android")===-1&&ua.indexOf("iphone")===-1;
+            if(!isPC||screen.width<460){
+                location.replace("opengit-flutter-phone.html")
+            }
             var t=-1;
             $("img").lazyload({effect: "fadeIn"});
             $("#scrollview").on("scroll",function(){
@@ -317,7 +322,7 @@
 
 <div style="">
     <div class="container" style="text-align: center; position: relative; font-weight: 300" >
-        <div class="tit" style=" padding: 50px 0;">觉得好？请打赏下作者</div>
+        <div class="tit" style=" padding: 50px 0;">觉得好？请打赏下作者😀</div>
         <div style="overflow: hidden; display: inline-block">
         <div style="display: inline-block; width: 200px; float: left">
             <img src="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/weixin_pay.jpeg" style="width:220px">
