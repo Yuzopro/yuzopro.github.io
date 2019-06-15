@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "一款Github客户端之OpenGit"
+title:      "一款Flutter实现的Github客户端之OpenGit"
 subtitle:   "OpenGit是用Flutter开发的一款Github客户端"
 date:       2019-06-13 19:32:00
 author:     "Yuzo"
@@ -13,7 +13,7 @@ tags:
     - iOS
 ---
 
-# 一款Github客户端之OpenGit
+# 一款Flutter实现的Github客户端之OpenGit
 
 > 本项目为个人Flutter的学习练习项目。
 
