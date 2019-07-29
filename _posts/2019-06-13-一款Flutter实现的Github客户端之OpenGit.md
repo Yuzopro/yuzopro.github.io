@@ -22,6 +22,20 @@ tags:
 
 [项目地址-OpenGit客户端](https://github.com/Yuzopro/OpenGit_Flutter)
 
+## 编译代码
+
+由于涉及到子工程，clone代码如下所示 
+
+```git
+git clone --recursive https://github.com/Yuzopro/opengit_flutter.git 
+git checkout -b master origin/master 
+cd flutter_common_lib 
+git checkout -b master origin/master
+cd ../
+flutter build apk
+flutter install
+```
+
 ## 预览
 
 部分页面效果如下：
@@ -90,6 +104,22 @@ tags:
     9. 功能介绍：支持每个版本迭代的详情介绍；
     10. 版本更新：支持app的升级；
 
+## 1.1.0版本
+    
+    1. 修改项目架构，采用BloC和Redux混合开发；
+    2. 优化趋势项目列表不能展示的问题；
+    3. 细节优化以及bug修复；
+    
+## 1.2.0版本
+
+    1. 增加闪屏广告逻辑；
+    2. 增加新手引导页面；
+    3. 优化趋势列表，支持项目和用户的展示；
+    4. 优化网络层代码；
+    5. 公共代码提取，并以子工程的形式关联；
+    6. 增加升级红点提示；
+    7. 其他细节优化;
+
 ## 学习历程
 
 ### 初识Flutter
@@ -152,7 +182,7 @@ UI层我们主要使用的是material组件库，对Scaffold 、 AppBar 进行�
 | **permission_handler**     | **权限申请** |
 
 ## Android版安装包：
-[点击下载](https://github.com/Yuzopro/OpenGit_Flutter/releases/download/1.0.0/opengit-release-1.0.0.apk)
+[点击下载](https://github.com/Yuzopro/OpenGit_Flutter/releases/download/1.1.0/opengit-release-1.1.0.apk)
 
 扫码下载
 
@@ -162,9 +192,9 @@ UI层我们主要使用的是material组件库，对Scaffold 、 AppBar 进行�
 
 ## 项目环境
 
-    1. Flutter version 1.6.3
+    1. Flutter version 1.8.2
 
-    2. Dart version 2.3.2 (build 2.3.2-dev.0.0 e3edfd36b2)
+    2. Dart version 2.5.0 (build 2.5.0-dev.0.0 b5aeaa6796)
 
     3. Android SDK version 28.0.3
 
@@ -189,6 +219,8 @@ UI层我们主要使用的是material组件库，对Scaffold 、 AppBar 进行�
 - [Flutter 实战](https://book.flutterchina.club/)
 
 - [Github Developer](https://developer.github.com/v3/)
+
+- [Github-trending-api](https://github.com/huchenme/github-trending-api)
 
 ## 关于作者
 
