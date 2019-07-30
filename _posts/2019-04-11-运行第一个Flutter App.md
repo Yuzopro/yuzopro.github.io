@@ -4,7 +4,7 @@ title:      "运行第一个Flutter App"
 subtitle:   "聊聊官方Flutter Demo"
 date:       2019-04-11 17:16:00
 author:     "Yuzo"
-header-img: "img/post-bg-flutter.jpg"
+header-img: "img/post-bg-flutter.jpeg"
 catalog: true
 tags:
     - Flutter
