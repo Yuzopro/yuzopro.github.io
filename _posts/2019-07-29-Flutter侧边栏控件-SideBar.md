@@ -404,6 +404,70 @@ if (offset != null) {
 }
 ```
 
+## 使用CustomPainter封装SideBar
+上文SideBar的封装，用`SizeBox`封装每个letter，然后存放在`List<Widget>`列表中，最后填充`Column`，如下面代码所示
+```dart
+List<Widget> children = List();
+A_Z_LIST.forEach((v) {
+    children.add(SizedBox(
+        width: widget.letterWidth.toDouble(),
+        height: widget.letterHeight.toDouble(),
+        child: Text(v, textAlign: TextAlign.center, style: _style),
+    ));
+});
+
+child: Column(
+    mainAxisSize: MainAxisSize.min,
+    children: children,
+),
+```
+下面用`CustomPainter`实现SideBar，如下面代码所示
+```dart
+class _SideBarPainter extends CustomPainter {
+  final TextStyle textStyle;
+  final int width;
+  final int height;
+
+  TextPainter _textPainter;
+
+  _SideBarPainter(this.textStyle, this.width, this.height) {
+    _textPainter = new TextPainter(
+      textAlign: TextAlign.center,
+      textDirection: TextDirection.ltr,
+    );
+  }
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    int length = A_Z_LIST.length;
+
+    for (int i = 0; i < length; i++) {
+      _textPainter.text = new TextSpan(
+        text: A_Z_LIST[i],
+        style: textStyle,
+      );
+
+      _textPainter.layout();
+      _textPainter.paint(
+          canvas, Offset(width.toDouble() / 2, i * height.toDouble()));
+    }
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    return true;
+  }
+}
+```
+使用`_SideBarPainter`如下面代码所示
+```dart
+child: CustomPaint(
+    painter: _SideBarPainter(
+        widget.textStyle, widget.width, widget.letterHeight),
+    size: Size(widget.width.toDouble(), _height),
+),
+```
+
 ## 项目源码
 [OpenGit_Fultter](https://github.com/Yuzopro/opengit_flutter)
 
