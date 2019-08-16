@@ -564,6 +564,7 @@ InstallApkPlugin.installApk(path);
 ## 项目地址
 
 [OpenGit客户端](https://github.com/Yuzopro/OpenGit_Flutter)
+[flutter_common_lib](https://github.com/Yuzopro/flutter_common_lib)
 
 ## 关于作者
 
