@@ -26,20 +26,20 @@ tags:
  5. 用户资料和token等信息的保存，在本文中不会提到，如需查看该部分代码，点击[OpenGit_Flutter](https://github.com/Yuzopro/OpenGit_Flutter)；
 
 最终的演示效果如下所示
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_demo.gif)
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_demo.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf506c8f3f4ea3?w=360&h=740&f=gif&s=531851)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf5068b38c5873?w=360&h=740&f=png&s=55385)
 
 登录界面的布局代码，不做过多的介绍，如果需要了解更多，可以查看相关源码，地址会在本文的最后贴出。
 
 ## 工程结构
 [flutter_architecture](https://github.com/Yuzopro/flutter_architecture)根目录是一个`Flutter Package`，其下面分别创建了`bloc`、`mvc`、`mvp`、`redux`四个工程，`lib`目录分别是四个工程的公用模块，例如网络请求、日志打印、toast提示、主页信息展示等。如下图所示
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_project.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf5068b45e42ba?w=760&h=824&f=png&s=86550)
 
 ## MVC
 该架构是在写[flutter_architecture](https://github.com/Yuzopro/flutter_architecture)例子时最后加上的，因为在进行`Android`开发的过程中，经常用它来与`MVP`做对比。
 
 ### 架构视图
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_mvc.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf5068b42e8b3f?w=601&h=365&f=png&s=10634)
 
 ### 程序入口
 `main.dart`是程序的入口，完成登录界面的启动，相关代码如下所示
@@ -276,7 +276,7 @@ _login() async {
 该架构是在进行Android开发时，是一种比较常用的架构。
 
 ### 架构视图
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_mvp.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf5068b3df4032?w=537&h=323&f=png&s=9849)
 
 ### 程序入口
 `main.dart`是程序的入口，完成登录界面的启动，相关代码如下所示
@@ -512,7 +512,7 @@ class _LoginPageState extends BaseState<LoginPage, LoginPresenter, ILoginView>
 关于什么是BloC，可以参考[[Flutter Package]状态管理之BLoC的封装](https://juejin.im/post/5be42e9e5188256ccc192c68)和[Flutter | 状态管理探索篇——BLoC(三)](https://juejin.im/post/5bb6f344f265da0aa664d68a)。
 
 ### 架构视图
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_bloc.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf5068bccb5d8c?w=1874&h=1002&f=png&s=67978)
 
 ### 程序入口
 `main.dart`是程序的入口，完成登录界面的启动，相关代码如下所示
@@ -745,7 +745,7 @@ login(BuildContext context) async {
 `Redux`是网页开发着广泛使用的设计模式，比如用在React.js中。关于它的介绍可以参考文章[Flutter主题切换之flutter redux](https://yuzopro.github.io/2019/06/01/Flutter%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2%E4%B9%8Bflutter-redux/)。
 
 ### 架构视图
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_architecture_redux.png)
+![](https://user-gold-cdn.xitu.io/2019/7/15/16bf50695c6d9f68?w=1280&h=642&f=webp&s=8746)
 
 ### 程序入口
 `main.dart`是程序的入口，完成登录界面的启动，相关代码如下所示

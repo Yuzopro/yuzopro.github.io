@@ -13,9 +13,6 @@ tags:
     - iOS
 ---
 
-# Flutter主题切换之flutter redux
-> 本文详细讲述怎样在flutter中集成和使用redux，关于redux的概念、原理和实现，读者可自行百度，本文不做累述。
-
 ## flutter redux
 ### flutter redux组成
 redux主要由`Store`、`Action`、`Reducer`三部分组成
@@ -428,7 +425,10 @@ class _ViewModel {
 ```
 #### 运行效果
 执行代码，效果如下
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_redux_theme.gif)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/3/16b1b319b243aef3?w=320&h=658&f=gif&s=960787)
 
-参考文章
+## 源代码
+[项目地址-OpenGit客户端](https://github.com/Yuzopro/OpenGit_Flutter)
+
+## 参考文章
 [https://www.jianshu.com/p/34a6224e0cf1](https://www.jianshu.com/p/34a6224e0cf1)

@@ -15,7 +15,7 @@ tags:
 
 ## ListView
 先看下如下截图
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_1.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a1c6315cc?w=360&h=640&f=png&s=109793)
 以上效果图的代码，是从`flutter`官方demo`flutter_gallery`内copy的部分代码。
 首先，首先定义一个列表，代码如下
 ```dart
@@ -68,7 +68,7 @@ ListTile({
  })
 ```
 ### 属性
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_7.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a0b8cee71?w=1087&h=577&f=png&s=30551)
 ### 使用
 ```dart
 ListTile(
@@ -85,7 +85,7 @@ ListTile(
 )
 ```
 ### 效果
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_2.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a13dc0876?w=476&h=102&f=png&s=13040)
 
 ## ListView.builder
 ListView.builder适合列表项比较多（或者无限）的情况，因为只有当子Widget真正显示的时候才会被创建。
@@ -98,7 +98,7 @@ ListView.builder(
 })
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_1.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a1c6315cc?w=360&h=640&f=png&s=109793)
 ## ListView.separated
 `ListView.separated`可以生成列表项之间的分割器，它比ListView.builder多了一个separatorBuilder参数，该参数是一个分割器生成器。
 将上面列表填充的代码修改为`ListView.separated`，代码如下所示
@@ -114,7 +114,7 @@ ListView.separated(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_3.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a0ac39bef?w=360&h=640&f=png&s=96048)
 ## 实例：Listview下拉刷新 上拉加载更多
 下面实现首次进入页面，加载数据，下拉能刷新页面数据，上拉能加载更多数据。
 ### 下拉刷新
@@ -153,7 +153,7 @@ void showRefreshLoading() async {
 ```
 当`Loading`完之后会触发`RefreshIndicator`的`onRefresh`属性，到此，下拉刷新已经实现完毕。
 运行效果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_4.gif?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a334c88db?w=320&h=569&f=gif&s=71085)
 ### 上拉加载更多
 上拉加载需要监听`ListView`的滚动事件，当滚动事件与底部小于50并且有更多数据加载时，才会触发加载更多的逻辑，如下面代码所示
 ```dart
@@ -248,6 +248,6 @@ Widget builderItem(BuildContext context, int index) {
 ```
 运行代码
 加载中的效果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_5.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47a1b5fccff?w=360&h=640&f=png&s=98117)
 没有更多数据的效果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter//flutter_widgets_listview_6.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/13/16aaf47b30641e18?w=360&h=640&f=png&s=99259)

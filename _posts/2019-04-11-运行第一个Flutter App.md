@@ -20,23 +20,23 @@ tags:
 
 1：启动AndroidStudio，选择Start a new Flutter project。
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/first_flutter_app_1.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d1ac7371d2c9?w=463&h=425&f=png&s=23044)
 
 2：选择Flutter Application。
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/first_flutter_app_2.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d1ac73d0400c?w=559&h=456&f=png&s=50726)
 
 3：配置信息。
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/first_flutter_app_3.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d1ac742b6ffd?w=561&h=455&f=png&s=49741)
 
 4：设置包名。
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/first_flutter_app_4.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d1ac7380d4e7?w=560&h=455&f=png&s=55831)
 
 5：运行flutter_hello_world App。
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/first_flutter_app_5.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d1ac738d9552?w=960&h=508&f=png&s=240709)
 
 ## 分析lib/main.dart
 
@@ -58,9 +58,9 @@ void main() => runApp(MyApp());
 
 - Stateful widgets 持有的状态可能在widget生命周期中发生变化. 实现一个 stateful widget 至少需要两个类:
 
-	1. 一个 StatefulWidget类。
+  1. 一个 StatefulWidget类。
 
-	2. 一个 State类。 StatefulWidget类本身是不变的，但是 State类在widget生命周期中始终存在。
+  2. 一个 State类。 StatefulWidget类本身是不变的，但是 State类在widget生命周期中始终存在。
 
 
 `MyApp()`是一个无状态的部件，所有的界面UI都是在`build()`函数中处理，如下面代码所示

@@ -47,12 +47,12 @@ Text(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_1.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09215737376a?w=720&h=1440&f=png&s=23198)
 
 - style
  >文本样式，样式属性如下表所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_11.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0bafa5dc5406?w=1083&h=757&f=png&s=66010)
 ```dart
 Text(
     'Hello World',
@@ -71,12 +71,12 @@ Text(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_2.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09215ba67dc8?w=720&h=1440&f=png&s=24354)
 
  - textAlign
 >文本对齐方式，参数如下面表格所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_12.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0bafa903e65a?w=1081&h=346&f=png&s=26454)
 ```dart
 Column(
     children: <Widget>[
@@ -126,7 +126,7 @@ Column(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_3.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09215d46fe5b?w=720&h=1440&f=png&s=189449)
  
  - textDirection
 >`TextDirection.ltr`，文本从左向右流动；
@@ -154,7 +154,7 @@ Column(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_4.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09215d5b73e8?w=720&h=1440&f=png&s=80783)
 
  - locale
 >此属性很少设置，用于选择区域特定字形的语言环境
@@ -184,12 +184,12 @@ Column(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_5.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09215ff89cdc?w=720&h=1440&f=png&s=57970)
 
  - overflow
 > 处理溢出文本，参数如下面表格所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_13.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0bafe3a2396d?w=1081&h=207&f=png&s=15866)
 ```dart
 Column(
     children: <Widget>[
@@ -221,7 +221,7 @@ Column(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_6.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09216162f3f5?w=720&h=1440&f=png&s=80862)
 
 
  - textScaleFactor
@@ -247,7 +247,7 @@ Column(
         )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_7.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0922319b6bb2?w=720&h=1440&f=png&s=117814)
 
  - maxLines
 >最大行数
@@ -272,7 +272,7 @@ Column(
 )
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_8.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa09226f1554a2?w=720&h=1440&f=png&s=68631)
  
 ## Text.rich
 在上面的例子中，Text的所有文本内容只能按同一种样式进行展示，如果我们需要对一个Text内容的不同部分按照不同的样式显示，那又该怎么处理？此时需要用到`Text.rich`。
@@ -327,7 +327,7 @@ Text.rich(TextSpan(
 ))
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_9.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0921e3fd8590?w=720&h=1440&f=png&s=25954)
 
 ## DefaultTextStyle
 在widget树中，文本的样式默认是可以被继承的，父节点的文本样式子节点默认会继承，如果子节点中重新设置了默认样式的某些属性，那么则以子节点设置的为准。我们也可以通过设置`inherit: false`不继承父节点的默认样式。下面我们看一个例子
@@ -361,6 +361,6 @@ DefaultTextStyle(
         ))
 ```
 运行结果如下图所示
-![enter image description here](https://github.com/Yuzopro/image/blob/master/flutter/flutter_widgets_text_10.png?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/5/10/16aa0922809d771e?w=720&h=1440&f=png&s=145280)
  
 好了，`Text`相关的内容大概就这么多。更详细的请看[官方文档](https://docs.flutter.io/flutter/widgets/Text-class.html)

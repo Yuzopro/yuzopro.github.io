@@ -161,7 +161,7 @@ Future<Null> _init(Store<AppState> store, NextDispatcher next) async {
 
 ## 闪屏页
 
-![闪屏页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_splash.png)
+![闪屏页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3952fbc6618?w=360&h=648&f=png&s=123692)
 
 当进入到闪屏页后，通过`redux`启动页面的倒计时操作，如下面代码所示
 
@@ -203,11 +203,11 @@ void _jump(BuildContext context, LoginStatus status, bool isShowGuide) {
 
 ## 引导页
 
-![引导页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_guide.png)  
-![引导页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_guide_1.png)
-![引导页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_guide_2.png)
-![引导页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_guide_3.png) 
-![引导页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_guide_4.png)
+![引导页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39530454e3b?w=360&h=648&f=png&s=47313)  
+![引导页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd395a692e554?w=360&h=648&f=png&s=57471)
+![引导页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39531886b3c?w=360&h=648&f=png&s=59348)
+![引导页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39538e4f263?w=360&h=648&f=png&s=66286) 
+![引导页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3953345885c?w=360&h=648&f=png&s=53468)
 
 `引导页`相关代码参考[flutter_gallery](https://github.com/flutter/flutter/tree/master/examples/flutter_gallery)里的`animation`，这里不做过大介绍。当点击`立即体验`时，相关代码如下所示
 
@@ -227,7 +227,7 @@ void _onExperience(BuildContext context) {
 
 ## 登录页
 
-![登录页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_login.png)
+![登录页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd395de7ec8d3?w=360&h=648&f=png&s=50252)
 
 登录过程分为授权和获取用户资料，涉及到的api如下所示
 
@@ -337,7 +337,7 @@ PageView(
 
 ## 首页
 
-![首页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_home.png)
+![首页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3961c721cb4?w=360&h=648&f=png&s=111617)
 
 首页展示的数据是获取掘金flutter列表，相关api如下所示
 
@@ -384,7 +384,7 @@ NavigatorUtil.goWebView(context, item.title, item.originalUrl)
 
 ## 项目页
 
-![项目页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_repo.png)
+![项目页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd396b4da4786?w=360&h=648&f=png&s=76586)
 
 项目页展示的数据是自己已公开的项目列表，相关api如下所示
 
@@ -439,7 +439,7 @@ NavigatorUtil.goReposDetail(context, item.owner.login, item.name);
 
 ## 动态页
 
-![动态页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_event.png)
+![动态页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3965e998dda?w=360&h=648&f=png&s=79666)
 
 动态页展示的数据是已收到的动态列表，相关api如下所示
 
@@ -503,7 +503,7 @@ if (item.payload != null && item.payload.issue != null) {
 
 ## 问题页
 
-![问题页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_issue.png)
+![问题页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3963119d2a9?w=360&h=648&f=png&s=71029)
 
 问题页展示的数据是已收到的问题列表，相关api如下所示
 
@@ -550,7 +550,7 @@ NavigatorUtil.goIssueDetail(context, item);
 
 ## 项目详情页
 
-![项目详情页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_repo_detail.png)
+![项目详情页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd396cab889b2?w=360&h=648&f=png&s=70364)
 
 首次进入项目详情页时，会查询该项目的详情以及star和watch状态，相关api如下所示
 
@@ -1023,7 +1023,7 @@ String getShareText(BuildContext context) {
 
 ## 问题详情页
 
-![问题详情页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_issue_detail.png)
+![问题详情页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd3970895c65a?w=360&h=648&f=png&s=102930)
 
 首次进入问题详情页时，会查询该问题的详情以及评论列表，相关api如下所示
 
@@ -1638,8 +1638,8 @@ void deleteIssueLabel(String name) async {
 
 ## 用户资料页
 
-![个人资料页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_my_profile.png) ![follow页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_user_profile_follow.png) 
-![unfollow页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_user_profile_unfollow.png)
+![个人资料页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39748f76552?w=360&h=648&f=png&s=64337) ![follow页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd397942d37d3?w=360&h=648&f=png&s=56617) 
+![unfollow页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39878e3f129?w=360&h=648&f=png&s=52609)
 
 用户资料页展示了用户的昵称、简介、项目列表、star项目列表、关注列表、被关注列表、动态、所在组织、公司、地址、邮箱、博客等信息。首次进入用户资料页时，会查询该用户的详情以及关注状态，相关api如下所示
 
@@ -1821,7 +1821,7 @@ Future _fetchProfile() async {
 
 ## 编辑资料
 
-![编辑资料页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_edit_profile.png)
+![编辑资料页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39849eb2cbb?w=360&h=648&f=png&s=43085)
 
 编辑资料页支持昵称、邮箱、博客、公司、所在地、简介的编辑，相关api如下所示
 
@@ -1871,7 +1871,7 @@ void _editProfile() async {
 
 ## 搜索页面
 
-![搜索项目页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_search_repo.png) ![搜索用户页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_search_user.png) ![搜索问题页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_search_issue.png)
+![搜索项目页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd398bbe23fce?w=360&h=648&f=png&s=72427) ![搜索用户页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd398c61874ca?w=360&h=648&f=png&s=30588) ![搜索问题页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39902756e50?w=360&h=648&f=png&s=55246)
 
 ### 搜索项目页
 
@@ -2033,8 +2033,8 @@ void dealResult(result) {
 
 ## 趋势页
 
-![搜索项目页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_trending.png)
-![搜索用户页](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/introduce_opengit/opengit_trending_sort.png)
+![搜索项目页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd399034c392d?w=360&h=648&f=png&s=69268)
+![搜索用户页](https://user-gold-cdn.xitu.io/2019/8/23/16cbd39924e78c4b?w=360&h=648&f=png&s=73336)
 
 趋势页分为项目和用户两种趋势，支持按照时间和语言种类的筛选，api主要参考[Github-trending-api](https://github.com/huchenme/github-trending-api)
 
@@ -2129,7 +2129,7 @@ Future _fetchTrendList() async {
 
 扫码下载
 
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_3.png)
+![](https://user-gold-cdn.xitu.io/2019/8/23/16cbd399f858c012?w=260&h=260&f=png&s=5131)
 
 ## 项目地址
 

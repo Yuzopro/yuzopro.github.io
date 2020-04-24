@@ -68,7 +68,7 @@ private void showNotification() {
 
 运行代码，点击`启动通知栏`按钮,此时会创建一个通知栏，并且2秒后，主页自动关闭。然后在点击`通知栏`，进入到`通知栏页面`，点击返回按钮时，发下APP没有回到主页面，而是回到了Launcher主页面。如下面截图所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/android/task_stack_builder_1.gif?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d2908264057b?w=360&h=640&f=gif&s=462601)
 
 所以用`PendingIntent.getActivity`方式打开通知栏，就会出现上面所描述的问题。为了解决这问题，提供了一下几种方式。
 
@@ -89,7 +89,7 @@ PendingIntent pendingIntent = PendingIntent.
 
 运行代码，如下面截图所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/android/task_stack_builder_2.gif?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d29082b69e5c?w=360&h=640&f=gif&s=397744)
 
 此方法适用于`MainActivity`和`NotifyActivity`在同一个moudle的情况。如果不在同一个moudle又该如何处理呢？接着往下看。
 
@@ -123,7 +123,7 @@ PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLA
 
 但是，当主页`MainActivity`（这里用A代表，方便后面描述）的`launchMode`设置为`singleTask`时，当主页`A`存在时，并且还打开了其他页面'OtherActivity'（B），目前Activity的栈的顺序是`A、B`。当打开用`PendingIntent.getActivities`和`TaskStackBuilder`两种方式创建的通知栏，页面跳转到`NotifyActivity`（C），并且一直按返回键，退栈的顺序是`C、A、Launcher`，`B`却没在栈内了，见`图3`。具体原因是，当打开通知栏是，栈的顺序是`A、B、A`，由于`A`的`launchMode`是`singleTask`，此时会删除`B`,当整个通知栏操作全部完成时，Activity的栈的顺序是`A、C`，所以会出现上面描述的现象。如果要满足退栈顺序是`C、B、A、Launcher`该怎么实现？
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/android/task_stack_builder_3.gif?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d290823bfeba?w=360&h=640&f=gif&s=249354)
 
 ## 用PendingIntent.getActivity创建通知栏,本地维护Activity栈
 
@@ -211,4 +211,4 @@ public class ActivityManager {
  ```
 运行代码，如下面截图所示
 
-![enter image description here](https://github.com/Yuzopro/image/blob/master/android/task_stack_builder_4.gif?raw=true)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/4/30/16a6d29083543c54?w=360&h=640&f=gif&s=391265)

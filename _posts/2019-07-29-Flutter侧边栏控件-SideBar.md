@@ -21,7 +21,7 @@ tags:
 
 SideBar是APP开发当中常见的功能之一，多用于索引列表，如城市选择，分类等。在优化[OpenGit](https://github.com/Yuzopro/opengit_flutter)趋势列表时，由于在选择语言时需要用到这样的控件，尝试开发了这个控件，效果如下图所示
 
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_side_bar_demo.gif)
+![](https://user-gold-cdn.xitu.io/2019/7/29/16c3da1d96f5751f?w=360&h=740&f=gif&s=1686817)
 
 ## 准备
 
@@ -470,9 +470,3 @@ child: CustomPaint(
 
 ## 项目源码
 [OpenGit_Fultter](https://github.com/Yuzopro/opengit_flutter)
-
-
-
-
-
-

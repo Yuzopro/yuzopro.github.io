@@ -20,22 +20,22 @@ Flutter Plugin是一种特殊的包，包含一个用Dart编写的API定义，�
 * 应用的Flutter部分通过平台通道（platform channel）将消息发送到其应用程序的所在的宿主（iOS或Android）
 * 宿主监听的平台通道，并接收该消息。然后它会调用特定于该平台的API（使用原生编程语言） - 并将响应发送回客户端，即应用程序的Flutter部分
 使用平台通道在客户端（Flutter UI）和宿主（平台）之间传递消息，如下图所示
-![enter image description here](https://flutterchina.club/images/PlatformChannels.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5c035d43b?w=580&h=647&f=png&s=23232)
 ## 创建Flutter App
 相关代码见[运行第一个Flutter App](https://yuzopro.github.io/2019/04/11/%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AAFlutter-App/)
 ## 创建Flutter Plugin
 右键工程->New->Module，如下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_1.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5bbf6a11d?w=1380&h=520&f=png&s=208733)
 选择Flutter Plugin,点击Next，如下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_2.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5be0f4ceb?w=1300&h=924&f=png&s=89559)
 输入工程名（Project name），点击Next，如下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_3.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5bdf74031?w=1290&h=920&f=png&s=110969)
 输入包名（Package name），点击Finish，入下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_4.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5c679c2b1?w=1288&h=916&f=png&s=108041)
 到此Flutter plugin创建完成。
 ## 引入插件
 在工程目录下找到`pubspec.yaml`文件，在`dev_dependencies`添加如下依赖，如下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_5.png)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a5bdde3e21?w=1690&h=1024&f=png&s=656966)
 相关代码如下
 ```dart
 dev_dependencies:
@@ -206,4 +206,7 @@ public class InstallApkPlugin implements MethodCallHandler {
 </paths>
 ```
 运行代码如下图所示
-![enter image description here](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_plugin_6.gif)
+![enter image description here](https://user-gold-cdn.xitu.io/2019/6/13/16b503a6721e5c36?w=360&h=640&f=gif&s=221406)
+
+## 源代码
+[项目地址-OpenGit客户端](https://github.com/Yuzopro/OpenGit_Flutter)

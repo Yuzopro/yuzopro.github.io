@@ -193,7 +193,7 @@ UI层我们主要使用的是material组件库，对Scaffold 、 AppBar 进行�
 
 扫码下载
 
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_3.png)
+![](https://user-gold-cdn.xitu.io/2019/7/30/16c41f3a23c9e1ac?w=260&h=260&f=png&s=5134)
 
 ## IOS需要自行下载代码运行。（效果是一致的）
 
@@ -240,11 +240,6 @@ UI层我们主要使用的是material组件库，对Scaffold 、 AppBar 进行�
 - [简书](https://www.jianshu.com/u/ef3cb65219d4)
 
 - [CSDN](https://blog.csdn.net/Yuzopro)
-
-
-如果觉得好？请打赏下作者😀
-
-<img src="https://raw.githubusercontent.com/Yuzopro/image/master/flutter/weixin_pay.jpeg" width="260px"/>
 
 ## 默认条款
 

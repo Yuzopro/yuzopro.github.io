@@ -555,7 +555,7 @@ InstallApkPlugin.installApk(path);
 
 扫码下载
 
-![](https://raw.githubusercontent.com/Yuzopro/image/master/flutter/flutter_opengit_3.png)
+![](https://user-gold-cdn.xitu.io/2019/7/30/16c41f3a23c9e1ac?w=260&h=260&f=png&s=5134)
 
 ## Thanks For
 
@@ -564,6 +564,7 @@ InstallApkPlugin.installApk(path);
 ## 项目地址
 
 [OpenGit客户端](https://github.com/Yuzopro/OpenGit_Flutter)
+
 [flutter_common_lib](https://github.com/Yuzopro/flutter_common_lib)
 
 ## 关于作者
